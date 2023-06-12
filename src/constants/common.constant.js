@@ -1,0 +1,1 @@
+export const PAGE_404_ERROR = "The requested page was not found."
