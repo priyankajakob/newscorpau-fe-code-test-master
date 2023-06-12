@@ -14,3 +14,31 @@
     display: table;
     clear: both;
   }
+
+  .flex-row{
+    display: flex;
+    flex-direction: row;
+    padding: 1px;
+    margin: 1px;
+    border-radius: 1;
+    column-gap:2%;
+    width:90%;
+    padding-bottom:10px;
+    padding-top:10px;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  h4 {
+    margin: 0px;
+  }
+
+  .headline {
+    color: #222;
+  }
+
+  a {
+    text-decoration: none;
+    :hover {
+      color:cornflowerblue
+    }
+  }

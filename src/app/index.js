@@ -1,8 +1,13 @@
-import Routing from '../routes'
+import Routing from '../routes';
+import { Header } from '../components/molecules';
 
 const App = () => {
   return (
-    <Routing/>
+    <>
+      <Header/>
+      <Routing/>
+    </>
+    
   );
 }
 
