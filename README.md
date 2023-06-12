@@ -27,3 +27,7 @@ You can research throughout the challenge
 You can implement any framework/library/dependencies you feel are necessary. React is preferred.
 
 Good luck!
+
+**UPDATE as on 13 June 2023**
+![Screenshot 2023-06-13 at 1 47 01 AM](https://github.com/priyankajakob/newscorpau-fe-code-test-master/assets/50093965/99f67efe-608c-40ff-a9f8-5fd7f91db392)
+
