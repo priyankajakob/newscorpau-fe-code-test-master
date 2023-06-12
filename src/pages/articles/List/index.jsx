@@ -20,7 +20,7 @@ const ArticlesList = () => {
   }, [fullArticlesSet]);
 
   const loadThumbnailImages = (article) => {
-    //TODO: Recheck thumbnail logic
+    //TODO: Recheck thumbnail logic and use lodash here
     const idd = article.related?.thumbnail?.default[0] || "";
     const thumbnailUrl = article.references[idd]?.link?.media || "";
 
@@ -43,6 +43,7 @@ const ArticlesList = () => {
           //TODO: Remove this console.log
           console.log(article);
 
+          //TODO: Use lodash for all getKey
           return (
             <MuiBox className="flex-row" key={article.id}>
               <MuiBox>{loadThumbnailImages(article)}</MuiBox>
@@ -69,7 +70,7 @@ const ArticlesList = () => {
                       (article.authors &&
                         article.authors.length > 0 &&
                         article.authors[0].name)}</em>
-                    &nbsp;|&nbsp;
+                    {(article.byline || article.authors?.length>0) && (<span>&nbsp;|&nbsp;</span>)}
                     {article.date && article.date.live && moment(article.date.live).format('MMMM DD, YYYY')}
                   </MuiTypography>
                 </p>
