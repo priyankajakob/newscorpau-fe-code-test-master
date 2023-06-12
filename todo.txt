@@ -9,3 +9,5 @@
 1. Pagination
 2. Unit testing
 3. Clean up of files - more organized
+
+1. Could this be deployed? or not required?
