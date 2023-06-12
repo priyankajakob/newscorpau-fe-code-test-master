@@ -1,5 +1,3 @@
-***Welcome to the NewsCorp Front-End Coding Challenge***
-
 ***The challenge***
 
 Using your front-end skills, complete this front-end component that takes a JSON feed (simulated from our Content API (CAPI) data) and render a list of news articles.
