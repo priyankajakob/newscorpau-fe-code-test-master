@@ -1,5 +1,5 @@
-import { MuiBox } from "../../../components/atoms";
-import { Thumbnail } from "../../../components/molecules";
+import { MuiBox } from "../../atoms";
+import { Thumbnail } from "..";
 
 const ArticleThumbnail = ({image}) => {
     return(
