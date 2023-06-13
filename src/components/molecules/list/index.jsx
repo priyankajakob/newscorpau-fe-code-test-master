@@ -16,7 +16,7 @@ const List = ({ list, loading, error }) => {
           list.map((listItem,index) => {
             //TODO: Remove this console.log
             console.log(listItem);
-            return <ListSection key={index} listItem={listItem} />;
+            return <ListSection key={listItem?.id || index} listItem={listItem} />;
           })}
       </MuiBox>
     </MuiBox>

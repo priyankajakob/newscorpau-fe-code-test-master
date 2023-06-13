@@ -6,9 +6,9 @@ import ListThumbnail from "./ListThumbnail";
 
 const ListSection = ({ listItem }) => {
   if (!isEmpty(listItem)) {
-    const { headline, standfirst, date, byline, link, id, image } = listItem;
+    const { headline, standfirst, date, byline, link, image } = listItem;
     return (
-      <MuiBox className="flex-row" key={id}>
+      <MuiBox className="flex-row">
         <ListThumbnail image={image} />
         <ListContent
           headline={headline}
