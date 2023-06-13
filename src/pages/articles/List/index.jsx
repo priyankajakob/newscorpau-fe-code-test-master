@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { MuiBox, MuiTypography } from "../../../components/atoms";
 import { Content } from "../../../components/molecules";
-import ArticleSection from "./ArticleSection";
+import { ArticleSection } from "../../../components/molecules/articles";
 import CurrentList from "../../../data/capi.json";
 import "./list.scss";
 
