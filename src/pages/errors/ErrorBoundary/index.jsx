@@ -1,9 +1,12 @@
-import { NotFoundError } from '../../../components/molecules';
+import { NotFoundError, Content } from '../../../components/molecules';
 import { commonConstants } from '../../../constants'
 
 const ErrorBoundary = () => {
-    return(
-        <NotFoundError content ={commonConstants.PAGE_404_ERROR}/>
+    return (
+        <Content>
+            <NotFoundError content ={commonConstants.PAGE_404_ERROR}/>
+        </Content>
+        
     )
 }
 

@@ -1,12 +1,12 @@
-import { MuiBox } from '../atoms'
+import { MuiBox } from '../atoms';
 
 const NotFoundError = ({ content }) => {
     return(
-        <MuiBox>
-            <span>
-                { content }
-            </span>
-        </MuiBox>
+            <MuiBox>
+                <span>
+                    { content }
+                </span>
+            </MuiBox>
     )
 }
 
