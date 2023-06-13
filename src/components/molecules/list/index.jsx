@@ -1,24 +1,59 @@
-import { MuiBox, MuiTypography } from '../../atoms';
-import ListSection from './ListSection';
-import { commonConstants } from '../../../constants';
-import './index.scss';
+import { useState, useEffect } from "react";
+import { slice } from "lodash";
+import { MuiBox, MuiTypography } from "../../atoms";
+import ListSection from "./ListSection";
+import { commonConstants } from "../../../constants";
+import "./index.scss";
+import { Pagination } from "../../atoms";
 
 const List = ({ list, loading, error }) => {
+  const [startOffset, setStartOffset] = useState(0);
+  const [currentPageNumber, setCurrentPageNumber] = useState(1);
+  const [currentList, setCurrentList] = useState([]);
+  const [pageCount, setPageCount] = useState(0);
+
+  useEffect(() => {
+    if (list?.length > 0) {
+      const pageCount = Math.ceil(list.length / commonConstants.PER_PAGE_DATA);
+      const endOffset = startOffset + commonConstants.PER_PAGE_DATA;
+      const currItems = slice(list, startOffset, endOffset);
+      setCurrentList(currItems);
+      setPageCount(pageCount);
+    }
+  }, [list, startOffset]);
+
+  const handlePageClick = (event, currentPage) => {
+    const indexOfLastRecord = currentPage * commonConstants.PER_PAGE_DATA;
+    const indexOfFirstRecord =
+      indexOfLastRecord - commonConstants.PER_PAGE_DATA;
+    console.log(
+      `User requested page number ${currentPage}, which is offset ${indexOfFirstRecord}`,
+    );
+    setCurrentPageNumber(currentPage);
+    setStartOffset(indexOfFirstRecord);
+  };
+
   return (
     <MuiBox>
-      {/* Todo: Add Pagination */}
       <MuiTypography variant={"h2"}> </MuiTypography>
       <MuiBox>
         {loading && <p>{commonConstants.LOADING}</p>}
         {error && <p>{commonConstants.NETWORK_ERROR}</p>}
         {!error &&
           !loading &&
-          list.map((listItem,index) => {
-            //TODO: Remove this console.log
-            console.log(listItem);
-            return <ListSection key={listItem?.id || index} listItem={listItem} />;
+          currentList.map((listItem, index) => {
+            return (
+              <ListSection key={listItem?.id || index} listItem={listItem} />
+            );
           })}
       </MuiBox>
+      {!error && !loading && currentList.length > 0 && (
+        <Pagination
+          page={currentPageNumber}
+          count={pageCount}
+          onChange={handlePageClick}
+        />
+      )}
     </MuiBox>
   );
 };
