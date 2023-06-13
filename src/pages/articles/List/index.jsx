@@ -28,6 +28,7 @@ const customizeArticlesList = (articlesList) => {
   if (articlesList.length > 0) {
     articlesList.forEach((article) => {
       const articleData = {
+        id: get(article,"id"),
         headline: get(article, "headline.default", ""),
         standfirst: get(article, "standfirst.default"),
         image: loadThumbnailImages(article),

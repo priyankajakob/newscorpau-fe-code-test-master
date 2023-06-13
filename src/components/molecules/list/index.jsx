@@ -13,10 +13,10 @@ const List = ({ list, loading, error }) => {
         {error && <p>{commonConstants.NETWORK_ERROR}</p>}
         {!error &&
           !loading &&
-          list.map((listItem) => {
+          list.map((listItem,index) => {
             //TODO: Remove this console.log
             console.log(listItem);
-            return <ListSection listItem={listItem} />;
+            return <ListSection key={index} listItem={listItem} />;
           })}
       </MuiBox>
     </MuiBox>
