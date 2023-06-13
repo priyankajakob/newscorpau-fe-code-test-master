@@ -3,18 +3,6 @@
     box-sizing: border-box;
   }
 
-.column {
-    float: left;
-    width: fit-content;
-    padding: 10px;
-  }
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
   .flex-row{
     display: flex;
     flex-direction: row;
@@ -32,7 +20,7 @@
     margin: 0px;
   }
 
-  .headline {
+  .article-headline {
     color: #222;
   }
 
@@ -41,4 +29,8 @@
     :hover {
       color:cornflowerblue
     }
+  }
+
+  .article-standfirst{
+    font-size: medium;
   }
