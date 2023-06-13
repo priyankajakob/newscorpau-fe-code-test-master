@@ -28,6 +28,9 @@ You can implement any framework/library/dependencies you feel are necessary. Rea
 
 Good luck!
 
+
 **UPDATE as on 13 June 2023**
-![Screenshot 2023-06-13 at 1 47 01 AM](https://github.com/priyankajakob/newscorpau-fe-code-test-master/assets/50093965/99f67efe-608c-40ff-a9f8-5fd7f91db392)
+![Screenshot 2023-06-14 at 1 01 59 AM](https://github.com/priyankajakob/newscorpau-fe-code-test-master/assets/50093965/c8294507-e04b-4065-8cfc-8015ab398b5a)
+
+
 
