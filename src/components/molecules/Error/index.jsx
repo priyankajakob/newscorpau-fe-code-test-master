@@ -1,6 +1,6 @@
-import { MuiBox } from '../atoms';
+import { MuiBox } from '../../atoms';
 
-const NotFoundError = ({ content }) => {
+const Error = ({ content }) => {
     return(
             <MuiBox>
                 <span>
@@ -10,4 +10,4 @@ const NotFoundError = ({ content }) => {
     )
 }
 
-export default NotFoundError;
+export default Error;

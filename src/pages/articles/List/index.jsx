@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import moment from "moment";
 import { get, cloneDeep } from "lodash";
 import { Content } from "../../../components/molecules";
-import List from "../../../components/molecules/list";
+import List from "../../../components/molecules/List";
 
 import { fetchAll as fetchAllArticles } from "../../../api/articles";
 

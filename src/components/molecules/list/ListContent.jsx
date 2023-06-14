@@ -1,10 +1,11 @@
 import { MuiBox, MuiTypography } from "../../atoms";
+import './index.scss';
 
 const ListHeadine = ({ headline, articleLink }) => {
   return (
-    <MuiTypography variant="h5" sx={{ lineHeight: "24px", fontWeight: "bold" }}>
+    <MuiTypography variant="h5">
       <a href={articleLink.href} title={articleLink.title}>
-        <span className="article-headline">{headline}</span>
+        <span  className="list-headline">{headline}</span>
       </a>
     </MuiTypography>
   );
@@ -13,7 +14,7 @@ const ListHeadine = ({ headline, articleLink }) => {
 const ListStandfirst = ({ standfirst }) => {
   return (
     <div
-      className="article-standfirst"
+      className="list-standfirst"
       dangerouslySetInnerHTML={{
         __html: standfirst,
       }}
@@ -23,13 +24,13 @@ const ListStandfirst = ({ standfirst }) => {
 
 const ListFooter = ({ byline, date }) => {
   return (
-    <p>
-      <MuiTypography variant="body2" sx={{ color: "grey" }}>
+    <MuiBox className="list-footer">
+      <MuiTypography variant="body2">
         <em>{byline}</em>
         {byline && <span>&nbsp;|&nbsp;</span>}
-        {date}
+        <span>{date}</span>
       </MuiTypography>
-    </p>
+    </MuiBox>
   );
 };
 

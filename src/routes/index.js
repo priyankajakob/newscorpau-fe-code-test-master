@@ -1,7 +1,7 @@
 import { Routes, BrowserRouter, Route } from 'react-router-dom';
 
 import Articles from '../pages/articles/List';
-import ErrorBoundary from '../pages/errors/ErrorBoundary';
+import ErrorBoundary from './ErrorBoundary';
 
 const Routing = () => {
     return(

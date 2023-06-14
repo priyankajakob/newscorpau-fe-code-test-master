@@ -1,10 +1,10 @@
-import NotFoundError from './NotFoundError';
+import Error from './Error';
 import Header from './Header';
 import Thumbnail from './Thumbnail';
 import Content from './Content';
 
 export {
-    NotFoundError,
+    Error,
     Header,
     Thumbnail,
     Content

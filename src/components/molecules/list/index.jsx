@@ -26,6 +26,7 @@ const List = ({ list, loading, error }) => {
     const indexOfLastRecord = currentPage * commonConstants.PER_PAGE_DATA;
     const indexOfFirstRecord =
       indexOfLastRecord - commonConstants.PER_PAGE_DATA;
+    // TODO: Remove this console.log
     console.log(
       `User requested page number ${currentPage}, which is offset ${indexOfFirstRecord}`,
     );
@@ -48,11 +49,13 @@ const List = ({ list, loading, error }) => {
           })}
       </MuiBox>
       {!error && !loading && currentList.length > 0 && (
-        <Pagination
-          page={currentPageNumber}
-          count={pageCount}
-          onChange={handlePageClick}
-        />
+        <MuiBox>
+          <Pagination
+            page={currentPageNumber}
+            count={pageCount}
+            onChange={handlePageClick}
+          />
+        </MuiBox>
       )}
     </MuiBox>
   );
