@@ -1,19 +1,18 @@
-***The challenge**
+**The challenge**
 * This challenge is to create a front-end component that takes a JSON feed (simulated from  Content API (CAPI) data) and renders a list of news articles.
 
 **Steps to run the project**
 * Clone this repository in your local
-* Run __npm install__ in the command prompt to install the packages
-* Run __npm run start__ in the command prompt
-* Open url http://localhost:3000 in your browser
+* Run __npm install__ in the command prompt to install the project dependencies
+* Run __npm run start__ in the command prompt to start the web application
+* Navigate to http://localhost:3000 in your browser
 * Currently only '/' & '/articles' relative paths are supported. Switching to any other url will render an error on the screen.
 
 **Note**
 * This project was created using node v18.16.0.
 
-**Remaining Task**
-* Adding unit tests
-* Clean up design
+**Tests**
+* The unit testing cases are being added. You can find for few of them under \__tests__\ folder of the sub folders in "src"
 
 **UPDATE as on 14 June 2023 (Morning)**
 
