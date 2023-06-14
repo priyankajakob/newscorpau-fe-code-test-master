@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { slice } from "lodash";
-import { MuiBox, MuiTypography } from "../../atoms";
+import { MuiBox, MuiTypography, Pagination } from "../../atoms";
 import ListSection from "./ListSection";
 import { commonConstants } from "../../../constants";
 import "./index.scss";
-import { Pagination } from "../../atoms";
 
 const List = ({ list, loading, error }) => {
   const [startOffset, setStartOffset] = useState(0);
@@ -39,7 +38,7 @@ const List = ({ list, loading, error }) => {
       <MuiTypography variant={"h2"}> </MuiTypography>
       <MuiBox>
         {loading && <p>{commonConstants.LOADING}</p>}
-        {error && <p>{commonConstants.NETWORK_ERROR}</p>}
+        {error && <p className="list-error">{commonConstants.NETWORK_ERROR}</p>}
         {!error &&
           !loading &&
           currentList.map((listItem, index) => {

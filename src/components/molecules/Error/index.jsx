@@ -1,9 +1,10 @@
 import { MuiBox } from '../../atoms';
+import './index.scss';
 
 const Error = ({ content }) => {
     return(
             <MuiBox>
-                <span>
+                <span className="error">
                     { content }
                 </span>
             </MuiBox>
