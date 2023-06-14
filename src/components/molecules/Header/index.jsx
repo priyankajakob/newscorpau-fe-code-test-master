@@ -1,11 +1,11 @@
 import { MuiAppBar, MuiToolbar, MuiTypography } from "../../atoms";
 
-export default function Header() {
+export default function Header({ headerLogoText }) {
   const displayDesktop = () => {
     return (
       <MuiToolbar>
         <MuiTypography variant="h6" component="h1" align="center" gutterBottom>
-          NewsAustralia
+          {headerLogoText}
         </MuiTypography>
       </MuiToolbar>
     );

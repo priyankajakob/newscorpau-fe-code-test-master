@@ -5,7 +5,7 @@ const ListHeadine = ({ headline, articleLink }) => {
   return (
     <MuiTypography variant="h5">
       <a href={articleLink.href} title={articleLink.title}>
-        <span  className="list-headline">{headline}</span>
+        <span className="list-headline">{headline}</span>
       </a>
     </MuiTypography>
   );

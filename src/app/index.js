@@ -4,7 +4,7 @@ import { Header } from '../components/molecules';
 const App = () => {
   return (
     <>
-      <Header/>
+      <Header headerLogoText="NewsAustralia"/>
       <Routing/>
     </>
     
