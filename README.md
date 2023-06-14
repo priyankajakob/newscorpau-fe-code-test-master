@@ -1,5 +1,5 @@
 **The challenge**
-* This challenge is to create a front-end component that takes a JSON feed (simulated from  Content API (CAPI) data) and renders a list of news articles.
+* This is a front-end react project that takes a JSON feed (simulated from  Content API (CAPI) data) and renders a list of news articles.
 
 **Steps to run the project**
 * Clone this repository in your local
@@ -12,8 +12,10 @@
 * This project was created using node v18.16.0.
 
 **Tests**
-* The unit testing cases are being added. You can find for few of them under \__tests__\ folder of the sub folders in "src"
+* The unit testing cases are being added. You can find for few of them under `__tests__` folder under the sub folders in "src"
 
-**UPDATE as on 14 June 2023 (Morning)**
+---------------------------
+
+**UPDATE**
 
 ![Articles_List](https://github.com/priyankajakob/newscorpau-fe-code-test-master/assets/50093965/c8294507-e04b-4065-8cfc-8015ab398b5a)
