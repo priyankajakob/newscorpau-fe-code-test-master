@@ -1,8 +1,9 @@
 import { MuiBox } from '../atoms'
+import './Content.scss';
 
 const Content = ({children}) => {
     return(
-        <MuiBox sx={{marginTop:"5rem", marginLeft:"3rem"}}>
+        <MuiBox className="content">
             {children}
         </MuiBox>
     )

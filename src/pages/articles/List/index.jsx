@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
+import moment from "moment";
+import { get, cloneDeep } from "lodash";
 import { Content } from "../../../components/molecules";
 import List from "../../../components/molecules/list";
-import moment from "moment";
 
-import { get, cloneDeep } from "lodash";
+import { fetchAll as fetchAllArticles } from "../../../api/articles";
 
 const loadThumbnailImages = (article) => {
   //TODO: Recheck thumbnail logic and use lodash here
@@ -66,14 +67,13 @@ const ArticlesList = () => {
   }, []);
 
   useEffect(() => {
-    async function fetchData() {
+    const fetchData = async () => {
       try {
-        //This could be replaced with any api call instead of mocked json
-        const response = await fetch("./capi.json");
-        const fullData = await response.json();
+        const fullData = await fetchAllArticles();
         setFullArticlesSet(fullData);
         setLoading(false);
       } catch (err) {
+        console.log("List.jsx : get all articles call failed with error")
         console.log(err);
         setError(true);
         setLoading(false);
@@ -85,7 +85,7 @@ const ArticlesList = () => {
   }, [loading]);
 
   useEffect(() => {
-    if (fullArticlesSet.hits > 0 && fullArticlesSet?.results) {
+    if (fullArticlesSet?.size > 0 && fullArticlesSet?.results) {
       const newList = customizeArticlesList(fullArticlesSet.results);
       setArticlesList(newList);
     }
