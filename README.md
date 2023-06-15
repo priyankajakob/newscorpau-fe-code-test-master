@@ -64,6 +64,8 @@ For each article an Headline, Standfirst, Thumbnail, Byline, Date (__live date__
 
 - Clicking on the __headline__ of any article will navigate to the newscorp.au individual article page (redirects to article's canonical link)
 
+- Clicking on "...read more..." will show a brief introduction of the articles
+
 - Navigate to other __pages__ to view more articles
 
 Four articles at a time are currently rendered to screen - this is configurable by changing the value in constants file. 
@@ -76,7 +78,9 @@ __Additional__
 
 __Note : Currently the mocked json is read as an api. This could help to easily integrate the UI with any api call in future.__
 
-![Articles_List_Screenshot](https://github.com/priyankajakob/newscorpau-fe-code-test-master/assets/50093965/c8294507-e04b-4065-8cfc-8015ab398b5a)
+## Article List (Modified)
+![Screenshot 2023-06-15 at 5 55 11 PM](https://github.com/priyankajakob/newscorpau-fe-code-test-master/assets/50093965/3df695e8-6ccb-4738-8581-a1fbd78166d3)
+
 
 ## Code Architecture and Design Choices
 

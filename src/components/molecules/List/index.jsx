@@ -1,11 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { slice } from "lodash";
 import { MuiBox, MuiTypography, Pagination } from "../../atoms";
 import ListSection from "./ListSection";
 import { commonConstants } from "../../../constants";
+import { ArticleContext } from "../../../context";
 import "./index.scss";
 
-const List = ({ list, loading, error, noRecordsToDisplay }) => {
+const List = () => {
+
+  const { list, loading, error, noRecordsToDisplay } =
+  useContext(ArticleContext);
+
   const [startOffset, setStartOffset] = useState(0);
   const [currentPageNumber, setCurrentPageNumber] = useState(1);
   const [currentList, setCurrentList] = useState([]);

@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { MuiBox, MuiTypography } from "../../atoms";
-import './index.scss';
+import "./index.scss";
 
 const ListHeadine = ({ headline, articleLink }) => {
   return (
@@ -22,6 +23,17 @@ const ListStandfirst = ({ standfirst }) => {
   );
 };
 
+const ListIntro = ({ intro }) => {
+  return (
+    <div
+      className="list-intro"
+      dangerouslySetInnerHTML={{
+        __html: intro,
+      }}
+    />
+  );
+};
+
 const ListFooter = ({ byline, date }) => {
   return (
     <MuiBox className="list-footer">
@@ -34,12 +46,30 @@ const ListFooter = ({ byline, date }) => {
   );
 };
 
-const ListContent = ({ headline, standfirst, date, byline, link }) => {
+const ListContent = ({ headline, standfirst, date, byline, link, intro }) => {
+  const [toggleIntro, setToggleIntro] = useState(false);
+
+  const handleIntroToggle = () => {
+    setToggleIntro(!toggleIntro);
+  };
+
   return (
     <MuiBox>
       <ListHeadine headline={headline} articleLink={link} />
 
       {standfirst && <ListStandfirst standfirst={standfirst} />}
+
+      {/* TODO : Use MUI Accordion */}
+      {intro && (
+        <button className="list-intro-btn" onClick={handleIntroToggle}>
+          {toggleIntro ? "...read less.." : "...read more.."}
+        </button>
+      )}
+      {intro && toggleIntro && (
+        <MuiBox className="list-intro">
+          <ListIntro intro={intro} />
+        </MuiBox>
+      )}
 
       <ListFooter byline={byline} date={date} />
     </MuiBox>

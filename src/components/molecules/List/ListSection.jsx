@@ -6,7 +6,7 @@ import ListThumbnail from "./ListThumbnail";
 
 const ListSection = ({ listItem }) => {
   if (!isEmpty(listItem)) {
-    const { headline, standfirst, date, byline, link, image } = listItem;
+    const { headline, standfirst, date, byline, link, image, intro } = listItem;
     return (
       <MuiBox className="flex-row">
         <ListThumbnail image={image} />
@@ -16,6 +16,7 @@ const ListSection = ({ listItem }) => {
           date={date}
           byline={byline}
           link={link}
+          intro={intro}
         />
       </MuiBox>
     );
