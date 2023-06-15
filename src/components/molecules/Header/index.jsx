@@ -1,4 +1,4 @@
-import { MuiAppBar, MuiToolbar, MuiTypography } from "../../atoms";
+import { MuiAppBar, MuiToolbar, MuiTypography } from '../../atoms';
 
 export default function Header({ headerLogoText }) {
   const displayDesktop = () => {

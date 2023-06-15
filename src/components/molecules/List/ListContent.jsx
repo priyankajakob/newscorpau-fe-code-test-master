@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { MuiBox, MuiTypography } from "../../atoms";
-import "./index.scss";
+import { useState } from 'react';
+import { MuiBox, MuiTypography } from '../../atoms';
+import './index.scss';
 
 const ListHeadine = ({ headline, articleLink }) => {
   return (
@@ -17,7 +17,7 @@ const ListStandfirst = ({ standfirst }) => {
     <div
       className="list-standfirst"
       dangerouslySetInnerHTML={{
-        __html: standfirst,
+        __html: standfirst
       }}
     />
   );
@@ -28,7 +28,7 @@ const ListIntro = ({ intro }) => {
     <div
       className="list-intro"
       dangerouslySetInnerHTML={{
-        __html: intro,
+        __html: intro
       }}
     />
   );
@@ -62,7 +62,7 @@ const ListContent = ({ headline, standfirst, date, byline, link, intro }) => {
       {/* TODO : Use MUI Accordion */}
       {intro && (
         <button className="list-intro-btn" onClick={handleIntroToggle}>
-          {toggleIntro ? "...read less.." : "...read more.."}
+          {toggleIntro ? '...read less..' : '...read more..'}
         </button>
       )}
       {intro && toggleIntro && (
