@@ -74,7 +74,9 @@ __Additional__
 
 __Note : Currently the mocked json is read as an api. This could help to easily integrate the UI with any api call in future.__
 
-![Articles_List_Screenshot](https://github.com/priyankajakob/newscorpau-fe-code-test-master/assets/50093965/c8294507-e04b-4065-8cfc-8015ab398b5a)
+## Article List (Modified)
+![Screenshot 2023-06-15 at 5 55 11 PM](https://github.com/priyankajakob/newscorpau-fe-code-test-master/assets/50093965/3df695e8-6ccb-4738-8581-a1fbd78166d3)
+
 
 ## Code Architecture and Design Choices
 
