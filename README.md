@@ -14,11 +14,13 @@ To run this project locally, follow these steps:
     
 3. Navigate to the project directory : 
    __cd newscorpau-fe-code-test-master__
+   
+4. Switch to the __main__ branch 
 
-4. Install the dependencies using npm :
+5. Install the dependencies using npm :
    __npm install__
 
-5. Start the development server :
+6. Start the development server :
    __npm start__
    
 
