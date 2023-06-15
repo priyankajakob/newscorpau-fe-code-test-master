@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import moment from "moment";
-import { get, cloneDeep } from "lodash";
+import { get, cloneDeep, forEach } from "lodash";
 import { Content } from "../../../components/molecules";
 import List from "../../../components/molecules/List";
 
@@ -8,17 +8,17 @@ import { fetchAll as fetchAllArticles } from "../../../api/articles";
 
 const loadThumbnailImages = (article) => {
   //TODO: Recheck thumbnail logic and use lodash here
-  const idd = article.related?.thumbnail?.default[0] || "";
-  const thumbnailUrl = article?.references[idd]?.link?.media || "";
+  const idd = article?.related?.thumbnail?.default[0] || "dummy";
+  const thumbnailUrl = (article?.references && article.references[idd]?.link?.media) || "";
 
-  const height = article?.references[idd]?.height
-  const width = article?.references[idd]?.width
+  const height = article?.references && article?.references[idd]?.height;
+  const width = article?.references && article?.references[idd]?.width;
 
   const image = {
-    alt: article.extendedHeadline?.default,
+    alt: article?.extendedHeadline?.default,
     src: thumbnailUrl,
-    height: (height <= "75" ? height : "75"),
-    width: (width <= "100" ? width : "100"),
+    height: height <= "75" ? height : "75",
+    width: width <= "100" ? width : "100",
   };
   return image;
 };
@@ -27,9 +27,9 @@ const loadThumbnailImages = (article) => {
 const customizeArticlesList = (articlesList) => {
   const newArticlesList = [];
   if (articlesList.length > 0) {
-    articlesList.forEach((article) => {
+    forEach(articlesList, (article) => {
       const articleData = {
-        id: get(article,"id"),
+        id: get(article, "id"),
         headline: get(article, "headline.default", ""),
         standfirst: get(article, "standfirst.default"),
         image: loadThumbnailImages(article),
@@ -61,6 +61,8 @@ const ArticlesList = () => {
   const [articlesList, setArticlesList] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+  const [noRecordsToDisplay, setNoRecordsToDisplay] = useState(false);
 
   useEffect(() => {
     setLoading(true);
@@ -72,28 +74,39 @@ const ArticlesList = () => {
         const fullData = await fetchAllArticles();
         setFullArticlesSet(fullData);
         setLoading(false);
+        setLoaded(true);
       } catch (err) {
-        console.log("List.jsx : get all articles call failed with error")
+        console.log("List.jsx : get all articles call failed with error");
         console.log(err);
         setError(true);
         setLoading(false);
+        setLoaded(true);
       }
-    }
+    };
     if (loading) {
       fetchData();
     }
   }, [loading]);
 
   useEffect(() => {
-    if (fullArticlesSet?.size > 0 && fullArticlesSet?.results) {
+    if (fullArticlesSet?.results?.length > 0 && fullArticlesSet?.results) {
       const newList = customizeArticlesList(fullArticlesSet.results);
       setArticlesList(newList);
+    } else {
+      if (loaded) {
+        // To track that api call is complete and still list is empty
+        setNoRecordsToDisplay(true);
+      }
     }
-  }, [fullArticlesSet]);
-
+  }, [fullArticlesSet, loaded]);
   return (
     <Content>
-      <List list={articlesList} loading={loading} error={error} />
+      <List
+        list={articlesList}
+        loading={loading}
+        error={error}
+        noRecordsToDisplay={noRecordsToDisplay}
+      />
     </Content>
   );
 };

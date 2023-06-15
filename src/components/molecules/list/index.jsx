@@ -5,7 +5,7 @@ import ListSection from "./ListSection";
 import { commonConstants } from "../../../constants";
 import "./index.scss";
 
-const List = ({ list, loading, error }) => {
+const List = ({ list, loading, error, noRecordsToDisplay }) => {
   const [startOffset, setStartOffset] = useState(0);
   const [currentPageNumber, setCurrentPageNumber] = useState(1);
   const [currentList, setCurrentList] = useState([]);
@@ -56,7 +56,7 @@ const List = ({ list, loading, error }) => {
           />
         </MuiBox>
       )}
-      {!error && !loading && currentList.length === 0 && (
+      {!error && !loading && noRecordsToDisplay && (
         <MuiBox>
           <p className="list-no-data">{commonConstants.NO_RECORDS}</p>
         </MuiBox>
