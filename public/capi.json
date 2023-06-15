@@ -775,10 +775,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "9d46c114104d608cd31efc481a68c90d",
-            "b3a468b97a56afaac621016daec770f6"
-          ]
+          "default": ["9d46c114104d608cd31efc481a68c90d", "b3a468b97a56afaac621016daec770f6"]
         }
       },
       "references": {
@@ -1861,10 +1858,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "7cdd0407aaf36de61a334310a13bae65",
-            "5c83f5d61a40ce98de82184ff4b32e16"
-          ]
+          "default": ["7cdd0407aaf36de61a334310a13bae65", "5c83f5d61a40ce98de82184ff4b32e16"]
         }
       },
       "references": {
@@ -2134,13 +2128,7 @@
           }
         ]
       },
-      "keywords": [
-        "SES",
-        "NSW floods",
-        "Sydney floods",
-        "Hawkesbury River",
-        "flooding"
-      ],
+      "keywords": ["SES", "NSW floods", "Sydney floods", "Hawkesbury River", "flooding"],
       "revision": { "major": 1616563322000, "minor": 0 },
       "rightsMetadata": { "originatedSource": "The Daily Telegraph" },
       "target": {
@@ -3810,10 +3798,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "aace080934c4438b5998800a07b31967",
-            "9e1eedf6cbb41675bd6bc1d307fe0519"
-          ]
+          "default": ["aace080934c4438b5998800a07b31967", "9e1eedf6cbb41675bd6bc1d307fe0519"]
         }
       },
       "references": {
@@ -6203,10 +6188,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "6a839d8bbb918a550453d32493ca83a5",
-            "1205836a6551aeb6e98e7274cfe3a135"
-          ]
+          "default": ["6a839d8bbb918a550453d32493ca83a5", "1205836a6551aeb6e98e7274cfe3a135"]
         }
       },
       "references": {
@@ -8356,10 +8338,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "12eea1f47e37c2644bc2e920bc043a4f",
-            "a08daa19d5278bf775720bb87117c3b7"
-          ]
+          "default": ["12eea1f47e37c2644bc2e920bc043a4f", "a08daa19d5278bf775720bb87117c3b7"]
         }
       },
       "references": {
@@ -10380,10 +10359,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "c737929d1c0d7c9bb7c5ad2a37c2f821",
-            "ad9b7b59e78330002ed78ad38f030919"
-          ]
+          "default": ["c737929d1c0d7c9bb7c5ad2a37c2f821", "ad9b7b59e78330002ed78ad38f030919"]
         }
       },
       "references": {
@@ -10768,10 +10744,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "d17d191bd162a082dea7d9c2aea567ac",
-            "40436609f6dd5b80b8ee62f017f880fb"
-          ]
+          "default": ["d17d191bd162a082dea7d9c2aea567ac", "40436609f6dd5b80b8ee62f017f880fb"]
         }
       },
       "references": {
@@ -12108,10 +12081,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "df5bc456f6b190f85486624ec14d7c3f",
-            "4f2f8c98b2e5bb036a798f15a2c3ebc1"
-          ]
+          "default": ["df5bc456f6b190f85486624ec14d7c3f", "4f2f8c98b2e5bb036a798f15a2c3ebc1"]
         }
       },
       "references": {
@@ -15374,10 +15344,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "1079e89fcf2ab3fa9117595a0f69c7d7",
-            "c5a0737953a52c6dcb286c11ff669a28"
-          ]
+          "default": ["1079e89fcf2ab3fa9117595a0f69c7d7", "c5a0737953a52c6dcb286c11ff669a28"]
         }
       },
       "references": {
@@ -16634,10 +16601,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "997cbbb3eb91008fad05c02265f0a358",
-            "0986c46b78597d2227c1630ab86571f7"
-          ]
+          "default": ["997cbbb3eb91008fad05c02265f0a358", "0986c46b78597d2227c1630ab86571f7"]
         }
       },
       "references": {
@@ -17601,10 +17565,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "26332561f5c8533db5b11bdca581045d",
-            "5b30cda5bbd2f6d8a9b3d66fc64f5ffc"
-          ]
+          "default": ["26332561f5c8533db5b11bdca581045d", "5b30cda5bbd2f6d8a9b3d66fc64f5ffc"]
         }
       },
       "references": {
@@ -18809,10 +18770,7 @@
       },
       "related": {
         "secondary": {
-          "default": [
-            "b3364b9f06f0db18523acbf8a14c0422",
-            "928b17a4f8f9ddfe3d6129240583d03b"
-          ]
+          "default": ["b3364b9f06f0db18523acbf8a14c0422", "928b17a4f8f9ddfe3d6129240583d03b"]
         },
         "thumbnail": {
           "default": [
@@ -18825,10 +18783,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "fd2664f883a1506edb04c3f8e5e3ef2c",
-            "c59fe9c64811b0d125a617638db46dca"
-          ]
+          "default": ["fd2664f883a1506edb04c3f8e5e3ef2c", "c59fe9c64811b0d125a617638db46dca"]
         }
       },
       "references": {
@@ -20445,10 +20400,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "3c02a79aeae8b3636f88821215f7782d",
-            "7c4f96bf4afb17f85b0cf4c210733ba1"
-          ]
+          "default": ["3c02a79aeae8b3636f88821215f7782d", "7c4f96bf4afb17f85b0cf4c210733ba1"]
         }
       },
       "references": {
@@ -21654,10 +21606,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "67a9674c4a513c6c16596776a0d0fc43",
-            "2d82548571ccbffb5227e4e4085213f7"
-          ]
+          "default": ["67a9674c4a513c6c16596776a0d0fc43", "2d82548571ccbffb5227e4e4085213f7"]
         }
       },
       "references": {
@@ -22747,10 +22696,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "9ff136879b635c7e5a7477efbf8b3ee3",
-            "088183bac15866fadaf3cefe0500ef84"
-          ]
+          "default": ["9ff136879b635c7e5a7477efbf8b3ee3", "088183bac15866fadaf3cefe0500ef84"]
         }
       },
       "references": {
@@ -25125,10 +25071,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "d98e5873739ce8f0b4634fc4d26f21e4",
-            "0bcae138d14b83f9781dff2bb7f0d4f9"
-          ]
+          "default": ["d98e5873739ce8f0b4634fc4d26f21e4", "0bcae138d14b83f9781dff2bb7f0d4f9"]
         }
       },
       "references": {
@@ -27139,10 +27082,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "4b2ae63aaff91589f92d82476a199861",
-            "25da9c49665041c68fd9f164fbe5950a"
-          ]
+          "default": ["4b2ae63aaff91589f92d82476a199861", "25da9c49665041c68fd9f164fbe5950a"]
         }
       },
       "references": {
@@ -28280,10 +28220,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "43e450a7f8804ae0a1c3d0f7ab4504f3",
-            "6bf03fc04aa326c2f357d624cd121dd7"
-          ]
+          "default": ["43e450a7f8804ae0a1c3d0f7ab4504f3", "6bf03fc04aa326c2f357d624cd121dd7"]
         }
       },
       "references": {
@@ -29463,10 +29400,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "12388c799a3150dda362d58cff271ef7",
-            "1827956b2ed79f73f2f75bfa33db314b"
-          ]
+          "default": ["12388c799a3150dda362d58cff271ef7", "1827956b2ed79f73f2f75bfa33db314b"]
         }
       },
       "references": {
@@ -31324,10 +31258,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "e8097cbf8e54f87e31ff24d888719498",
-            "5837bd5d49f40693bfe3ebb53e90c763"
-          ]
+          "default": ["e8097cbf8e54f87e31ff24d888719498", "5837bd5d49f40693bfe3ebb53e90c763"]
         }
       },
       "references": {
@@ -32531,10 +32462,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "fe628dbddfaa2e153dd69a3db9ea2dfd",
-            "11ea5d05f93a4a0d7c9068c4168cc307"
-          ]
+          "default": ["fe628dbddfaa2e153dd69a3db9ea2dfd", "11ea5d05f93a4a0d7c9068c4168cc307"]
         }
       },
       "references": {
@@ -34501,10 +34429,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "e4a95dbc14ddde1e5e592c2ea443fa8c",
-            "e893dcf2dd7b8f04425aaf14f7933727"
-          ]
+          "default": ["e4a95dbc14ddde1e5e592c2ea443fa8c", "e893dcf2dd7b8f04425aaf14f7933727"]
         }
       },
       "references": {
@@ -35374,10 +35299,7 @@
       },
       "related": {
         "secondary": {
-          "default": [
-            "187e8013708573030febc254aac21f44",
-            "30e95d9cfc5a3a151dfa58a3c050c5d6"
-          ]
+          "default": ["187e8013708573030febc254aac21f44", "30e95d9cfc5a3a151dfa58a3c050c5d6"]
         },
         "thumbnail": {
           "default": [
@@ -35390,10 +35312,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "a04de1d963f03aa5bb1ac58d27a0108c",
-            "957461242e2920f392ea756027e43d8b"
-          ]
+          "default": ["a04de1d963f03aa5bb1ac58d27a0108c", "957461242e2920f392ea756027e43d8b"]
         }
       },
       "references": {
@@ -39761,10 +39680,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "d3e1135072fe0d058c2abf4ac285654b",
-            "affc80f5f1811a19561ffaa3a8dfea00"
-          ]
+          "default": ["d3e1135072fe0d058c2abf4ac285654b", "affc80f5f1811a19561ffaa3a8dfea00"]
         }
       },
       "references": {
@@ -40434,10 +40350,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "a2bc71c66d6f8b3cee8b0aaee966b7cc",
-            "b9b17f87ecb974fb09bb37cb7c8a69e4"
-          ]
+          "default": ["a2bc71c66d6f8b3cee8b0aaee966b7cc", "b9b17f87ecb974fb09bb37cb7c8a69e4"]
         }
       },
       "references": {
@@ -41084,10 +40997,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "787c68992dd004037fdf4389c591bebd",
-            "481c15b5bb839eab19514616778221d3"
-          ]
+          "default": ["787c68992dd004037fdf4389c591bebd", "481c15b5bb839eab19514616778221d3"]
         }
       },
       "references": {
@@ -41235,13 +41145,7 @@
       "extendedHeadline": {
         "default": "Live breaking news: One dead in NSW, one missing in Queensland as floods turn deadly"
       },
-      "topics": [
-        "Weather",
-        "Brisbane",
-        "Live Daily News",
-        "coronavirus",
-        "Sydney"
-      ],
+      "topics": ["Weather", "Brisbane", "Live Daily News", "coronavirus", "Sydney"],
       "liveCoverage": {
         "iframeSrc": "https://www.news.com.au/newscorpau-live-coverage-embed/31166491ff5a1548870cd35aae70efe2",
         "status": "enable"
@@ -42796,10 +42700,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "58c9787199698af3a312c1351811666c",
-            "f63710eee60de911b813cec781e9743a"
-          ]
+          "default": ["58c9787199698af3a312c1351811666c", "f63710eee60de911b813cec781e9743a"]
         }
       },
       "references": {
@@ -43964,10 +43865,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "e4ef13c0508d5d453bf0252bf3759a7a",
-            "14e48a9113b0748748ffbb3366b58299"
-          ]
+          "default": ["e4ef13c0508d5d453bf0252bf3759a7a", "14e48a9113b0748748ffbb3366b58299"]
         }
       },
       "references": {
@@ -45407,10 +45305,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "aee7fbf4024fdee8a4ea3db127b4e0d4",
-            "c16666bb08d37c617f70a10d919e10d4"
-          ]
+          "default": ["aee7fbf4024fdee8a4ea3db127b4e0d4", "c16666bb08d37c617f70a10d919e10d4"]
         }
       },
       "references": {
@@ -46298,10 +46193,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "34edc2133434392b9de96bf7f19a4f14",
-            "1c0bcfbb08fcbefbf27582e918043cfc"
-          ]
+          "default": ["34edc2133434392b9de96bf7f19a4f14", "1c0bcfbb08fcbefbf27582e918043cfc"]
         }
       },
       "references": {
@@ -47846,10 +47738,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "57b194537b82c8ded69be025ed3338d2",
-            "45cbc2f5ed7e03471f7e1771431c7fff"
-          ]
+          "default": ["57b194537b82c8ded69be025ed3338d2", "45cbc2f5ed7e03471f7e1771431c7fff"]
         }
       },
       "references": {
@@ -48463,10 +48352,7 @@
       },
       "related": {
         "secondary": {
-          "default": [
-            "d3de8ae1d25d133a700df1e94c4f58e2",
-            "18b4348a1dddf9f24a47f628f07e3a2a"
-          ]
+          "default": ["d3de8ae1d25d133a700df1e94c4f58e2", "18b4348a1dddf9f24a47f628f07e3a2a"]
         },
         "thumbnail": {
           "default": [
@@ -48479,10 +48365,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "7b14e447cac022b955d83186ce3362ab",
-            "20604462bfab1c2eb74e2832cc787408"
-          ]
+          "default": ["7b14e447cac022b955d83186ce3362ab", "20604462bfab1c2eb74e2832cc787408"]
         }
       },
       "references": {
@@ -49534,10 +49417,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "f5cf961c33681e5c39746f688e336dc0",
-            "6f121c05e6840cec6c2476ca49cec53a"
-          ]
+          "default": ["f5cf961c33681e5c39746f688e336dc0", "6f121c05e6840cec6c2476ca49cec53a"]
         }
       },
       "references": {
@@ -50537,10 +50417,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "bc52f4f5e9f786a9b7900c0026fb5edd",
-            "5c242cb78e153b17b03b4027cb94cf51"
-          ]
+          "default": ["bc52f4f5e9f786a9b7900c0026fb5edd", "5c242cb78e153b17b03b4027cb94cf51"]
         }
       },
       "references": {
@@ -51400,10 +51277,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "c46a2304b4411e34d9243ac97815767b",
-            "5805eabe09e87dfed508f6acbaefe65f"
-          ]
+          "default": ["c46a2304b4411e34d9243ac97815767b", "5805eabe09e87dfed508f6acbaefe65f"]
         }
       },
       "references": {
@@ -53613,10 +53487,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "8970943478c91fb1c081c095204c7d63",
-            "97815f361c1e4b6c55583a8e125152b2"
-          ]
+          "default": ["8970943478c91fb1c081c095204c7d63", "97815f361c1e4b6c55583a8e125152b2"]
         }
       },
       "references": {
@@ -55383,10 +55254,7 @@
           ]
         },
         "primary": {
-          "default": [
-            "1a4ae8356dd308fbafa7385cdc5c01ad",
-            "92d926eea1ddd3eff035346961205830"
-          ]
+          "default": ["1a4ae8356dd308fbafa7385cdc5c01ad", "92d926eea1ddd3eff035346961205830"]
         }
       },
       "references": {

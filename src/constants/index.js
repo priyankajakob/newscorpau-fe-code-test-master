@@ -1,5 +1,3 @@
-import * as commonConstants from "./common.constant";
+import * as commonConstants from './common.constant';
 
-export {
-    commonConstants
-}
+export { commonConstants };

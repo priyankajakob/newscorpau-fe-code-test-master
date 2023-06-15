@@ -1,8 +1,8 @@
-import { isEmpty } from "lodash";
-import { MuiBox } from "../../atoms";
+import { isEmpty } from 'lodash';
+import { MuiBox } from '../../atoms';
 
-import ListContent from "./ListContent";
-import ListThumbnail from "./ListThumbnail";
+import ListContent from './ListContent';
+import ListThumbnail from './ListThumbnail';
 
 const ListSection = ({ listItem }) => {
   if (!isEmpty(listItem)) {

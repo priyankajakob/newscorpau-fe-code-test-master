@@ -5,13 +5,12 @@ import { Header } from '../components/molecules';
 const App = () => {
   return (
     <>
-      <Header headerLogoText="NewsAustralia"/>
+      <Header headerLogoText="NewsAustralia" />
       <BrowserRouter>
-        <Routing/>
+        <Routing />
       </BrowserRouter>
     </>
-    
   );
-}
+};
 
 export default App;

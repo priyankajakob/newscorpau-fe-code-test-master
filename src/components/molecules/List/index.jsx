@@ -1,15 +1,13 @@
-import { useState, useEffect, useContext } from "react";
-import { slice } from "lodash";
-import { MuiBox, MuiTypography, Pagination } from "../../atoms";
-import ListSection from "./ListSection";
-import { commonConstants } from "../../../constants";
-import { ArticleContext } from "../../../context";
-import "./index.scss";
+import { useState, useEffect, useContext } from 'react';
+import { slice } from 'lodash';
+import { MuiBox, MuiTypography, Pagination } from '../../atoms';
+import ListSection from './ListSection';
+import { commonConstants } from '../../../constants';
+import { ArticleContext } from '../../../context';
+import './index.scss';
 
 const List = () => {
-
-  const { list, loading, error, noRecordsToDisplay } =
-  useContext(ArticleContext);
+  const { list, loading, error, noRecordsToDisplay } = useContext(ArticleContext);
 
   const [startOffset, setStartOffset] = useState(0);
   const [currentPageNumber, setCurrentPageNumber] = useState(1);
@@ -28,37 +26,28 @@ const List = () => {
 
   const handlePageClick = (event, currentPage) => {
     const indexOfLastRecord = currentPage * commonConstants.PER_PAGE_DATA;
-    const indexOfFirstRecord =
-      indexOfLastRecord - commonConstants.PER_PAGE_DATA;
+    const indexOfFirstRecord = indexOfLastRecord - commonConstants.PER_PAGE_DATA;
     // TODO: Remove this console.log
-    console.log(
-      `User requested page number ${currentPage}, which is offset ${indexOfFirstRecord}`,
-    );
+    console.log(`User requested page number ${currentPage}, which is offset ${indexOfFirstRecord}`);
     setCurrentPageNumber(currentPage);
     setStartOffset(indexOfFirstRecord);
   };
 
   return (
     <MuiBox>
-      <MuiTypography variant={"h2"}> </MuiTypography>
+      <MuiTypography variant={'h2'}> </MuiTypography>
       <MuiBox>
         {loading && <p>{commonConstants.LOADING}</p>}
         {error && <p className="list-error">{commonConstants.NETWORK_ERROR}</p>}
         {!error &&
           !loading &&
           currentList.map((listItem, index) => {
-            return (
-              <ListSection key={listItem?.id || index} listItem={listItem} />
-            );
+            return <ListSection key={listItem?.id || index} listItem={listItem} />;
           })}
       </MuiBox>
       {!error && !loading && currentList.length > 0 && (
         <MuiBox>
-          <Pagination
-            page={currentPageNumber}
-            count={pageCount}
-            onChange={handlePageClick}
-          />
+          <Pagination page={currentPageNumber} count={pageCount} onChange={handlePageClick} />
         </MuiBox>
       )}
       {!error && !loading && noRecordsToDisplay && (
