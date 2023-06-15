@@ -40,6 +40,7 @@ const customizeArticlesList = (articlesList) => {
           href: get(article, "link.canonical", ""),
           title: get(article, "target.urlTitle", ""),
         },
+        intro : get(article,"intro.default",undefined),
         byline:
           (article.byline && article.byline?.default) ||
           (article.authors &&
