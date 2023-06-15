@@ -47,6 +47,11 @@ The project follows the following structure:
 - The `List` component renders the list of articles.
 - The `ListSection` component represents an individual list(/article) item.
 - This `ListSection` component reuses other reusable components.
+- There are more components present like Header, Content, Error, Thumbnail etc.
+- The `pages` directory contains react components used for rendering the pages in the application. Currently it contains react component for rendering the articles page.
+- The `api` directory contains the api service calls. 
+- The `routes` directory holds the routing structure/flow defined for the applciation.
+- The `constants` directory contains the constants (like error messages etc.) used in the application.
 
 ## Features
 
