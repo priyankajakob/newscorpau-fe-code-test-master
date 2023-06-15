@@ -62,6 +62,8 @@ For each article an Headline, Standfirst, Thumbnail, Byline, Date (__live date__
 
 - Clicking on the __headline__ of any article will navigate to the newscorp.au individual article page (redirects to article's canonical link)
 
+- Clicking on "...read more..." will show a brief introduction of the articles
+
 - Navigate to other __pages__ to view more articles
 
 Four articles at a time are currently rendered to screen - this is configurable by changing the value in constants file. 
