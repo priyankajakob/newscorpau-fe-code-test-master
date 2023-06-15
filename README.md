@@ -9,7 +9,8 @@ To run this project locally, follow these steps:
 1. Make sure you have Node.js installed (version 12 or above)
 
 2. Clone this repository to your local machine using the following command:
-    https://github.com/priyankajakob/newscorpau-fe-code-test-master.git
+    
+    __git clone__ https://github.com/priyankajakob/newscorpau-fe-code-test-master.git
     
 3. Navigate to the project directory : 
    __cd newscorpau-fe-code-test-master__
@@ -57,7 +58,7 @@ The project follows the following structure:
 
 - View News Articles 
 
-For each article an Headline, Standfirst, Thumbnail, Date (__live date__ of the article) are shown in UI.
+For each article an Headline, Standfirst, Thumbnail, Byline, Date (__live date__ of the article) are shown in UI.
 
 - Clicking on the __headline__ of any article will navigate to the newscorp.au individual article page (redirects to article's canonical link)
 
