@@ -1,15 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import moment from "moment";
 import { get, cloneDeep, forEach } from "lodash";
 import { Content } from "../../../components/molecules";
 import List from "../../../components/molecules/List";
-
+import { ArticleContext } from "../../../context";
 import { fetchAll as fetchAllArticles } from "../../../api/articles";
 
 const loadThumbnailImages = (article) => {
   //TODO: Recheck thumbnail logic and use lodash here
   const idd = article?.related?.thumbnail?.default[0] || "dummy";
-  const thumbnailUrl = (article?.references && article.references[idd]?.link?.media) || "";
+  const thumbnailUrl =
+    (article?.references && article.references[idd]?.link?.media) || "";
 
   const height = article?.references && article?.references[idd]?.height;
   const width = article?.references && article?.references[idd]?.width;
@@ -40,7 +41,7 @@ const customizeArticlesList = (articlesList) => {
           href: get(article, "link.canonical", ""),
           title: get(article, "target.urlTitle", ""),
         },
-        intro : get(article,"intro.default",undefined),
+        intro: get(article, "intro.default", undefined),
         byline:
           (article.byline && article.byline?.default) ||
           (article.authors &&
@@ -100,14 +101,17 @@ const ArticlesList = () => {
       }
     }
   }, [fullArticlesSet, loaded]);
+
+  const value = useMemo(
+    () => ({ list: articlesList, loading, error, noRecordsToDisplay }),
+    [articlesList, loading, error, noRecordsToDisplay],
+  );
+
   return (
     <Content>
-      <List
-        list={articlesList}
-        loading={loading}
-        error={error}
-        noRecordsToDisplay={noRecordsToDisplay}
-      />
+      <ArticleContext.Provider value={value}>
+        <List />
+      </ArticleContext.Provider>
     </Content>
   );
 };
