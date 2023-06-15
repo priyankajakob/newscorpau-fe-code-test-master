@@ -56,6 +56,11 @@ const List = ({ list, loading, error }) => {
           />
         </MuiBox>
       )}
+      {!error && !loading && currentList.length === 0 && (
+        <MuiBox>
+          <p className="list-no-data">{commonConstants.NO_RECORDS}</p>
+        </MuiBox>
+      )}
     </MuiBox>
   );
 };
